@@ -52,6 +52,11 @@
             <div class="px-5 py-4 menu">
 
               <%= render 'account/shared/menu' %>
+              <!-- The button to open modal -->
+              <!-- The button to open modal -->
+              <label for="my-modal-3" class="btn">P.A.L. Dialog</label>
+
+
             </div>
           </nav>
         <% end %>
@@ -131,6 +136,13 @@
         </div>
       </div>
     </div>
-
+    <!-- Put this part before </body> tag -->
+    <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box relative">
+        <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+        <iframe src="https://webchat.botframework.com/embed/pal9000bot?s=cOW0zUXhivE.sr6Jk2SSZK96uhGrYCj59KQOi8AS5m0Uau5FcxO2kgI" style="width:100%; height: 502px; max-height: 502px;"></iframe>
+      </div>
+    </div>
   </body>
 </html>
